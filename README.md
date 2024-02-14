@@ -33,7 +33,3 @@ To contribute, please follow these steps:
 3. Make your changes and commit them.
 4. Push your changes to your fork.
 5. Submit a pull request detailing your changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
