@@ -1,1 +1,53 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Formulaic Math Companion</title> <link rel="stylesheet" href="style.css"></head><body> <header> <nav> <h1>Formulaic Math Companion</h1><br><br> <ul> <li><a href="index.html">Home</a></li> <li><a href="about.html">About</a></li> <li><a href="contact.html">Contact</a></li> </ul> </nav> <div class="search"> <input type="text" id="searchBar" placeholder="Search for a formula..."> </div> </header> <main> <section class="formulaContainer"> <section id="formula-list"> <!-- Display area for list of available formulas --> </section> </section> <section class="outputContainer"> <section id="output-section"> <!-- Display area for selected formula and result --> </section> </section> </main> <script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaic Math Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <header class="bg-white shadow-md p-4">
+      <nav class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <h1 class="text-3xl font-bold text-blue-600">Formulaic Math Companion</h1>
+        <ul class="flex space-x-4">
+          <li>
+            <a href="index.html" class="text-blue-500 hover:text-blue-700 transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="text-blue-500 hover:text-blue-700 transition-colors">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="text-blue-500 hover:text-blue-700 transition-colors">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mt-4 flex justify-center">
+        <input type="text" id="searchBar" placeholder="Search for a formula..."
+          class="w-full md:w-1/2 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto mt-8 p-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section class="formulaContainer bg-white rounded-xl shadow p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-700">Available Formulas</h2>
+        <section id="formula-list" class="space-y-2">
+          <!-- Display area for list of available formulas -->
+        </section>
+      </section>
+
+      <section class="outputContainer bg-white rounded-xl shadow p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-700">Formula Output</h2>
+        <section id="output-section" class="min-h-[100px]">
+          <!-- Display area for selected formula and result -->
+        </section>
+      </section>
+    </main>
+
+    <footer class="bg-white mt-8 p-4 shadow-inner text-center text-sm text-gray-500">
+      &copy; 2025 Formulaic Math Companion. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
